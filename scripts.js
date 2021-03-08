@@ -21,6 +21,8 @@ const generateMessage = () => {
     let part1 = `Your sign is ${randomise(signsArray)}`;
     let part2 = `${randomise(predictionsArray)}`;
     let part3 = `You should ${randomise(adviceArray)}.`;
-    return part1 + part2 + part3;
+    document.getElementById('div1').innerText = part1;
+    document.getElementById('div2').innerText = part2;
+    document.getElementById('div3').innerText = part3;
 };
 
