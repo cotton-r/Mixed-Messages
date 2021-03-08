@@ -37,7 +37,7 @@ head, h1, h4 {
 
 .textOutputDivs {
     color: #e0df81;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 #wrapper {
@@ -78,8 +78,10 @@ main {
     justify-content: space-evenly;
     align-items: center;
     margin-top: -50px;
-    width: 95vw;
+    width: 90vw;
+    max-width: 1100px;
     height: 100%;
+    font-family: 'Anton', sans-serif;
 }
 
 #div1 {
