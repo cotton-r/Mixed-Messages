@@ -17,9 +17,22 @@ head, h1, h4 {
     color: #7E8CE0;
 }
 
-.generateButtonDiv, span {
-    color: #4ACFAC;
+#generateButton {
+    border-style: none;
+    background-color: #3d415e;
+    color: #7E8CE0;
     font-size: 1.2em;
+    padding: 8px;
+    border-radius: 10px;
+    pointer-events: auto;
+    position: relative;
+}
+
+#generateButton:hover {
+    cursor: pointer;
+    background-color: #1f1f24;
+    color: #f3f3f3;
+    transition: 0.3s;
 }
 
 .textOutputDivs {
