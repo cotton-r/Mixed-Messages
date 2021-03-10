@@ -9,8 +9,8 @@ body {
     background-color: #262833;
     font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
-    overflow: hidden;
     min-width: 95vw;
+    height: 100%;
 }
 
 head, h1, h4 {
@@ -44,7 +44,6 @@ head, h1, h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     min-width: 95vw;
 }
 
@@ -67,7 +66,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    height: 80vh;
     min-width: 95vw;
     padding-top: 50px;
 }
@@ -87,14 +86,55 @@ main {
 #div1 {
     align-self: flex-start;
     width: fit-content;
+    position: relative;
+    color: #e0df81;
+    font-size: 2em;
+}
+
+.div1animate {
+    animation-name: slideAndFade;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 #div2 {
     align-self: center;
     width: fit-content;
+    position: relative;
+    color: #e0df81;
+    font-size: 2em;
+}
+
+.div2animate {
+    animation-name: slideAndFade;
+    animation-duration: 3s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
 #div3 {
     align-self: flex-end;
     width: fit-content;
+    position: relative;
+    color: #e0df81;
+    font-size: 2em;
+}
+
+.div3animate {
+    animation-name: slideAndFade;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+/* keyframes animation to make text boxes slide in */
+@keyframes slideAndFade {
+    0%   { left: -100px; opacity: 0; }
+    25%  { left: 0px; opacity: 1; }
+    50%  { left: 0px; opacity: 1; }
+    75%  { left: 0px; opacity: 1; }
+    100% { left: 0px; opacity: 1; }
 }

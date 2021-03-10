@@ -25,6 +25,12 @@ window.onload = function() {
         document.getElementById('div1').innerHTML = part1;
         document.getElementById('div2').innerText = part2;
         document.getElementById('div3').innerText = part3;
+        document.getElementById('div1').removeAttribute('class');
+        document.getElementById('div2').removeAttribute('class');
+        document.getElementById('div3').removeAttribute('class');
+        document.getElementById('div1').setAttribute('class', 'div1animate');
+        document.getElementById('div2').setAttribute('class', 'div2animate');
+        document.getElementById('div3').setAttribute('class', 'div3animate');
     };
 
     document.getElementById('generateButton').addEventListener('click', function(){
