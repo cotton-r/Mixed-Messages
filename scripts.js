@@ -22,12 +22,21 @@ window.onload = function() {
         let part1 = `Your sign is ${randomise(signsArray)}`;
         let part2 = `${randomise(predictionsArray)}`;
         let part3 = `You should ${randomise(adviceArray)}.`;
+        // setting the text output divs to display to messages
         document.getElementById('div1').innerHTML = part1;
         document.getElementById('div2').innerText = part2;
         document.getElementById('div3').innerText = part3;
-        document.getElementById('div1').removeAttribute('class');
-        document.getElementById('div2').removeAttribute('class');
-        document.getElementById('div3').removeAttribute('class');
+        // this is a reset of the CSS animation, so that it fires on each click (CSS-tricks.com)
+        elm = document.getElementById('div1');
+        newone = elm.cloneNode(true);
+        elm.parentNode.replaceChild(newone, elm);
+        elm = document.getElementById('div2')
+        newone = elm.cloneNode(true);
+        elm.parentNode.replaceChild(newone, elm);
+        elm = document.getElementById('div3')
+        newone = elm.cloneNode(true);
+        elm.parentNode.replaceChild(newone, elm);
+        // applying the animation to each text div
         document.getElementById('div1').setAttribute('class', 'div1animate');
         document.getElementById('div2').setAttribute('class', 'div2animate');
         document.getElementById('div3').setAttribute('class', 'div3animate');
@@ -37,3 +46,4 @@ window.onload = function() {
         generateMessage();
     });
 };
+
